@@ -24,8 +24,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
-  return (
+const App = () => (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
@@ -42,9 +41,10 @@ const App: () => React$Node = () => {
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
+                Edit
+                <Text style={styles.highlight}>App.js</Text>
+                to change this screen and then come back to see your edits.
+                </Text>
             </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>See Your Changes</Text>
@@ -70,7 +70,6 @@ const App: () => React$Node = () => {
       </SafeAreaView>
     </>
   );
-};
 
 const styles = StyleSheet.create({
   scrollView: {
